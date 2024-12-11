@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Checkout" %}{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+  <h2 class="mb-4">{% trans "Checkout" %}</h2>
+
+  {% if cart_items %}
+  <h3>{% trans "Your Order:" %}</h3>
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>{% trans "Product" %}</th>
+        <th>{% trans "Quantity" %}</th>
+        <th>{% trans "Price" %}</th>
+        <th>{% trans "Total" %}</th>
+        <th>{% trans "Actions" %}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in cart_items %}
+      <tr>
+        <td>{{ item.product.name }}</td>
+        <td>
+          <input type="number" name="quantity_{{ item.id }}" value="{{ item.quantity }}" min="1"
+            onchange="updateQuantity({{ item.id }}, this.value)" class="form-control">
+        </td>
+        <td>{{ item.product.price }} </td>
+        <td id="total-item-{{ item.id }}">{{ item.get_total_price }}</td>
+
+
+        <td>
+          <button type="button" class="btn btn-warning btn-sm" onclick="removeFromCart({{ item.id }})">
+            {% trans "Remove" %}
+          </button>
+        </td>
+
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  <h3 class="mt-4">{% trans "Total:" %} <span id="total-price">{{ total_price }}</span> </h3>
+
+
+  <form id="clear-cart-form">
+    <button type="button" class="btn btn-danger" onclick="clearCart()">
+      {% trans "Clear Cart" %}
+    </button>
+  </form>
+
+
+  <form method="POST" action="{% url 'order_confirm' %}" class="mt-4">
+    {% csrf_token %}
+    <button type="submit" class="btn btn-success">{% trans "Confirm Order" %}</button>
+  </form>
+  {% else %}
+  <p>{% trans "Your cart is empty!" %}</p>
+  {% endif %}
+</div>
+{% endblock %}

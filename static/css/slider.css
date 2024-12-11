@@ -1,0 +1,9 @@
+.carousel-inner {
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.carousel-item img {
+	height: 200px;
+	object-fit: cover;
+}

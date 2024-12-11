@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Homepage" %}{% endblock %}
+
+{% block content %}
+<section>
+  <h2>{% trans "Featured Products" %}</h2>
+  <h2>{% trans "Featured Products" %}</h2>
+  <div class="row">
+    {% for product in featured_products %}
+    <div class="col-md-4">
+      <div class="card mb-4">
+        <!-- Слайдер изображений -->
+        <div id="carousel-{{ product.id }}" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            {% for image in product.images.all %}
+            <div class="carousel-item {% if forloop.first %}active{% endif %}">
+              <img src="{{ image.image.url }}" class="d-block w-100" alt="{{ product.name }}">
+            </div>
+            {% endfor %}
+          </div>
+          <!-- Навигация слайдера -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carousel-{{ product.id }}"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">{% trans "Previous" %}</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carousel-{{ product.id }}"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">{% trans "Next" %}</span>
+          </button>
+        </div>
+        <!-- Конец слайдера -->
+
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          <p class="card-text">{{ product.price }}₺</p>
+          <p class="card-text">{{ product.description }}</p>
+          <button class="btn btn-primary" onclick="addToCart({{ product.id }})">
+            {% trans "Add to Cart" %}
+          </button>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+</section>
+{% endblock %}
