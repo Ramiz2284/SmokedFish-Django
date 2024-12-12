@@ -1,0 +1,38 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	height: 100%; /* Задает одинаковую высоту для всех карточек */
+}
+
+.card-body {
+	flex-grow: 1; /* Заставляет тело карточки занимать доступное пространство */
+	display: flex;
+	flex-direction: column;
+}
+
+.btn {
+	margin-top: auto; /* Размещает кнопку "В корзину" внизу карточки */
+}
+
+.col-md-4 {
+	margin-top: 10px;
+}
+
+.fa-shopping-cart {
+	position: relative; /* Убедитесь, что иконка корзины может быть базой для анимации */
+}
+
+.animated-cart-icon {
+	position: absolute;
+	z-index: 9999; /* Поверх всего остального */
+	pointer-events: none; /* Исключить из событий клика */
+	transition: transform 0.8s ease-in-out, opacity 0.8s ease-in-out; /* Анимация движения */
+}
+/* стили для корзины */
+
+.fixed-cart-icon {
+	position: fixed !important;
+	top: 33px; /* Расстояние от верхнего края */
+	right: 10px; /* Расстояние от левого края */
+	z-index: 1000; /* Убедитесь, что иконка будет выше других элементов */
+}

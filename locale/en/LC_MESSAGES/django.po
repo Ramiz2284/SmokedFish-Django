@@ -16,9 +16,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: .\myshop\settings.py:58
 msgid "English"
@@ -26,87 +24,87 @@ msgstr ""
 
 #: .\myshop\settings.py:59
 msgid "Russian"
-msgstr "Русский"
+msgstr ""
 
 #: .\myshop\settings.py:60
 msgid "Turkish"
-msgstr "Турецкий"
+msgstr ""
 
 #: .\products\templates\base.html:15
 #: .\products\templates\products\homepage.html:4
 msgid "Homepage"
-msgstr "Главная"
+msgstr ""
 
 #: .\products\templates\base.html:23
 msgid "Smoked Fish Shop"
-msgstr "Магазин копченостей"
+msgstr ""
 
 #: .\products\templates\base.html:32
 msgid "Cart"
-msgstr "Корзина"
+msgstr ""
 
 #: .\products\templates\base.html:42
 msgid "Welcome to Our Smoked Fish Shop"
-msgstr "Добро пожаловать в магазин копченостей Анталии"
+msgstr ""
 
 #: .\products\templates\base.html:43
 msgid "Order fresh smoked fish with delivery today!"
-msgstr "Закажите сегодня свежую копчёную рыбу с доставкой!"
+msgstr ""
 
 #: .\products\templates\checkout.html:4 .\products\templates\checkout.html:8
 msgid "Checkout"
-msgstr "Оформление заказа"
+msgstr ""
 
 #: .\products\templates\checkout.html:11
 msgid "Your Order:"
-msgstr "Ваш заказ"
+msgstr ""
 
 #: .\products\templates\checkout.html:15
 #: .\products\templates\products\cart.html:13
 msgid "Product"
-msgstr "Продукт"
+msgstr ""
 
 #: .\products\templates\checkout.html:16
 #: .\products\templates\products\cart.html:14
 msgid "Quantity"
-msgstr "Кол-во"
+msgstr ""
 
 #: .\products\templates\checkout.html:17
 #: .\products\templates\products\cart.html:15
 msgid "Price"
-msgstr "Цена"
+msgstr ""
 
 #: .\products\templates\checkout.html:18
 #: .\products\templates\products\cart.html:16
 msgid "Total"
-msgstr "Сумма"
+msgstr ""
 
 #: .\products\templates\checkout.html:19
 #: .\products\templates\products\cart.html:17
 msgid "Actions"
-msgstr "Действие"
+msgstr ""
 
 #: .\products\templates\checkout.html:36
 msgid "Remove"
-msgstr "Удалить"
+msgstr ""
 
 #: .\products\templates\checkout.html:45
 #: .\products\templates\products\cart.html:46
 msgid "Total:"
-msgstr "Сумма"
+msgstr ""
 
 #: .\products\templates\checkout.html:50
 msgid "Clear Cart"
-msgstr "Очистить корзину"
+msgstr ""
 
 #: .\products\templates\checkout.html:57
 msgid "Confirm Order"
-msgstr "Сделать заказ"
+msgstr ""
 
 #: .\products\templates\checkout.html:60
 #: .\products\templates\products\cart.html:62
 msgid "Your cart is empty!"
-msgstr "Корзина пуста"
+msgstr ""
 
 #: .\products\templates\products\cart.html:4
 msgid "Shopping Cart"
@@ -118,12 +116,12 @@ msgstr ""
 
 #: .\products\templates\products\cart.html:29
 msgid "Update"
-msgstr "Обновить"
+msgstr ""
 
 #: .\products\templates\products\cart.html:38
 #: .\venv\Lib\site-packages\django\forms\formsets.py:499
 msgid "Delete"
-msgstr "Удалить"
+msgstr ""
 
 #: .\products\templates\products\cart.html:47
 msgid "Delivery:"
@@ -151,7 +149,7 @@ msgstr ""
 
 #: .\products\templates\products\homepage.html:8
 msgid "Featured Products"
-msgstr "Избранные товары"
+msgstr ""
 
 #: .\products\templates\products\homepage.html:26
 msgid "Previous"
@@ -163,11 +161,11 @@ msgstr ""
 
 #: .\products\templates\products\homepage.html:41
 msgid "Add to Cart"
-msgstr "В корзину"
+msgstr ""
 
 #: .\products\views.py:151
 msgid "Your cart is empty."
-msgstr "Корзина пуста"
+msgstr ""
 
 #: .\products\views.py:171
 msgid "Hello, world!"

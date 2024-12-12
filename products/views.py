@@ -12,7 +12,7 @@ def product_list(request):
 
 
 def homepage(request):
-    featured_products = Product.objects.filter(available=True)[:3]
+    featured_products = Product.objects.filter(available=True)[:10]
     return render(request, 'products/homepage.html', {'featured_products': featured_products})
 
 

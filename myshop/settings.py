@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'products',
+    
 ]
 
 MIDDLEWARE = [
@@ -65,6 +67,11 @@ LOCALE_PATHS = [
 
 
 LANGUAGE_CODE = 'en'
+
+USE_I18N = True
+USE_L10N = True
+USE_TZ = True
+
 
 
 ROOT_URLCONF = 'myshop.urls'
@@ -138,6 +145,8 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [BASE_DIR / 'static']
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

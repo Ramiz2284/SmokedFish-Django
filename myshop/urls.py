@@ -20,6 +20,7 @@ urlpatterns = [
 # Мультиязычные маршруты
 urlpatterns += i18n_patterns(
     path('', views.homepage, name='homepage'),
+    
     path('products/', views.product_list, name='product_list'),
     path('cart/', views.cart, name='cart'),
     path('checkout/', views.checkout, name='checkout'),

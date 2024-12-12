@@ -3,13 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#: .\products\templates\products\cart.html:46
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-09 16:26+0300\n"
+"POT-Creation-Date: 2024-12-11 19:25+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,134 +18,128 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: .\myshop\settings.py:57
+#: .\myshop\settings.py:58
 msgid "English"
 msgstr ""
 
-#: .\myshop\settings.py:58
-msgid "Russian"
-msgstr "Русский"
-
 #: .\myshop\settings.py:59
+msgid "Russian"
+msgstr ""
+
+#: .\myshop\settings.py:60
 msgid "Turkish"
-msgstr "Турецкий"
+msgstr ""
 
-#: .\products\templates\base.html:16
+#: .\products\templates\base.html:15
+#: .\products\templates\products\homepage.html:4
+msgid "Homepage"
+msgstr ""
+
+#: .\products\templates\base.html:23
+msgid "Smoked Fish Shop"
+msgstr "Tütsülenmiş Lezzetler "
+
+#: .\products\templates\base.html:32
+msgid "Cart"
+msgstr "Sepet"
+
+#: .\products\templates\base.html:42
 msgid "Welcome to Our Smoked Fish Shop"
-msgstr "Füme Balık Mağazamıza Hoş Geldiniz"
+msgstr "Tütsülenmiş Balık Dükkânımıza Hoş Geldiniz!"
 
-#: .\products\templates\base.html:17
+#: .\products\templates\base.html:43
 msgid "Order fresh smoked fish with delivery today!"
-msgstr "Taze füme balık siparişini bugün teslim edin!"
+msgstr "Bugün taze tütsülenmiş balık sipariş edin, kapınıza teslim edelim!"
 
-#: .\products\templates\checkout.html:6
+#: .\products\templates\checkout.html:4 .\products\templates\checkout.html:8
 msgid "Checkout"
-msgstr "Çıkış yapmak"
+msgstr "Siparişi Gözden Geçir"
 
-#: .\products\templates\checkout.html:9
+#: .\products\templates\checkout.html:11
 msgid "Your Order:"
-msgstr "Siparişiniz:"
+msgstr "Siparişiniz"
 
 #: .\products\templates\checkout.html:15
-#: .\products\templates\products\cart.html:12
+#: .\products\templates\products\cart.html:13
 msgid "Product"
 msgstr "Ürün"
 
 #: .\products\templates\checkout.html:16
-#: .\products\templates\products\cart.html:13
+#: .\products\templates\products\cart.html:14
 msgid "Quantity"
 msgstr "Miktar"
 
 #: .\products\templates\checkout.html:17
-#: .\products\templates\products\cart.html:14
+#: .\products\templates\products\cart.html:15
 msgid "Price"
 msgstr "Fiyat"
 
 #: .\products\templates\checkout.html:18
-#: .\products\templates\products\cart.html:15
+#: .\products\templates\products\cart.html:16
 msgid "Total"
 msgstr "Toplam"
 
 #: .\products\templates\checkout.html:19
-#: .\products\templates\products\cart.html:16
+#: .\products\templates\products\cart.html:17
 msgid "Actions"
-msgstr "Eylemler"
+msgstr "İşlemler"
 
-#: .\products\templates\checkout.html:25
-#: .\products\templates\products\cart.html:22
-msgid "{{ item.product.name }}"
-msgstr ""
-
-#: .\products\templates\checkout.html:29
-#: .\products\templates\products\cart.html:31
-msgid "{{ item.product.price }}tl"
-msgstr ""
-
-#: .\products\templates\checkout.html:30
-#: .\products\templates\products\cart.html:32
-msgid "{{ item.get_total_price }}tl"
-msgstr ""
-
-#: .\products\templates\checkout.html:35
+#: .\products\templates\checkout.html:36
 msgid "Remove"
-msgstr "Kaldırmak"
+msgstr "Kaldır"
 
 #: .\products\templates\checkout.html:45
-#: .\products\templates\products\cart.html:45
-msgid "Total: {{ total_price }}tl"
-msgstr ""
+#: .\products\templates\products\cart.html:46
+msgid "Total:"
+msgstr "Toplam"
 
-#: .\products\templates\checkout.html:46
-msgid "Update Cart"
-msgstr ""
-
-#: .\products\templates\checkout.html:52
+#: .\products\templates\checkout.html:50
 msgid "Clear Cart"
-msgstr ""
+msgstr "Sepeti Temizle"
 
-#: .\products\templates\checkout.html:58
+#: .\products\templates\checkout.html:57
 msgid "Confirm Order"
-msgstr ""
+msgstr "Siparişi Onayla"
 
-#: .\products\templates\checkout.html:62
+#: .\products\templates\checkout.html:60
 #: .\products\templates\products\cart.html:62
 msgid "Your cart is empty!"
+msgstr "Sepetiniz boş!"
+
+#: .\products\templates\products\cart.html:4
+msgid "Shopping Cart"
 msgstr ""
 
-#: .\products\templates\products\cart.html:6
+#: .\products\templates\products\cart.html:7
 msgid "Your Shopping Cart"
 msgstr ""
 
-#: .\products\templates\products\cart.html:28
+#: .\products\templates\products\cart.html:29
 msgid "Update"
 msgstr ""
 
-#: .\products\templates\products\cart.html:37
+#: .\products\templates\products\cart.html:38
 #: .\venv\Lib\site-packages\django\forms\formsets.py:499
 msgid "Delete"
 msgstr ""
 
-#: .\products\templates\products\cart.html:46
-msgid "Delivery: "
+#: .\products\templates\products\cart.html:47
+msgid "Delivery:"
 msgstr ""
 
-#: .\products\templates\products\cart.html:46
-msgid "{{ delivery_price }}tl"
-msgstr ""
-
-#: .\products\templates\products\cart.html:49
+#: .\products\templates\products\cart.html:50
 msgid "Choose your city:"
 msgstr ""
 
-#: .\products\templates\products\cart.html:51
+#: .\products\templates\products\cart.html:52
 msgid "Antalya"
 msgstr ""
 
-#: .\products\templates\products\cart.html:52
+#: .\products\templates\products\cart.html:53
 msgid "Istanbul"
 msgstr ""
 
-#: .\products\templates\products\cart.html:55
+#: .\products\templates\products\cart.html:56
 msgid "Calculate Delivery"
 msgstr ""
 
@@ -154,31 +147,31 @@ msgstr ""
 msgid "Proceed to Checkout"
 msgstr ""
 
-#: .\products\templates\products\homepage.html:7
+#: .\products\templates\products\homepage.html:8
 msgid "Featured Products"
 msgstr "Öne Çıkan Ürünler"
 
-#: .\products\templates\products\homepage.html:14
-msgid "{{ product.name }}"
-msgstr "Uskumru"
-
-#: .\products\templates\products\homepage.html:15
-msgid "{{ product.price }}tl"
+#: .\products\templates\products\homepage.html:26
+msgid "Previous"
 msgstr ""
 
-#: .\products\templates\products\homepage.html:16
-msgid "{{ product.description }}"
+#: .\products\templates\products\homepage.html:31
+msgid "Next"
 msgstr ""
 
-#: .\products\templates\products\homepage.html:17
+#: .\products\templates\products\homepage.html:41
 msgid "Add to Cart"
+msgstr "Sepete Ekle"
+
+#: .\products\views.py:151
+msgid "Your cart is empty."
 msgstr ""
 
-#: .\products\views.py:127
+#: .\products\views.py:171
 msgid "Hello, world!"
 msgstr ""
 
-#: .\products\views.py:131
+#: .\products\views.py:174
 #, python-format
 msgid "%(count)d item"
 msgid_plural "%(count)d items"
